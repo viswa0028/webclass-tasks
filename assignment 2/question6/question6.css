@@ -1,0 +1,18 @@
+#somthing{
+    list-style-type: circle;
+}
+#something li{
+    font-style: italic;
+}
+#something a{
+    text-decoration: none;
+}
+#something a:hover{
+    color: red;
+}
+#something a:visited{
+    color: purple;
+}
+#something a:active{
+    color: green;
+}
