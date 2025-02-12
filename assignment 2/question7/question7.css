@@ -1,0 +1,9 @@
+.third{
+    background-color: orange;
+    border-radius: 35%;
+    color: white;
+    margin: 5px;
+}
+.third:hover{
+    background-color: darkorange;
+}
