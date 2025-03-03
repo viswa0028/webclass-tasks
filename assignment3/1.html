@@ -1,1 +1,50 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viswa's IFrame example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        iframe {
+            border: 1px solid #8b8989;
+            margin: 20px 0;
+        }
+        .resources {
+            margin-top: 20px;
+        }
+        .footer {
+            margin-top: 30px;
+            font-size: 14px;
+            color: #111111;
+        }
+        .note {
+            font-style: italic;
+            margin-top: 10px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <h1>Evaluation</h1>
+    <iframe id="my_area" name="my_area" width="400" height="400" scrolling="yes" src="about:blank"></iframe>
+    
+    <div class="resources">
+        <h2>Resources</h2>
+        <ul>
+            <li><a href="https://www.google.com" onclick="return loadInIframe(this.href)">Google Website</a></li>
+            <li><a href="https://www.wikipedia.org" onclick="return loadInIframe(this.href)">Wikipedia</a></li>
+            <li><a href="https://developer.mozilla.org" onclick="return loadInIframe(this.href)">MDN Web Docs</a></li>
+        </ul>
+    </div>
+    
+    <div class="footer">
+        &copy; 2025 Amrita Viswavidyapeetham. All rights reserved.
+        <p class="note">Note: Some links may not be displayed in iframe, in that case they will open in a new window.</p>
+    </div>
+</body>
+</html>
