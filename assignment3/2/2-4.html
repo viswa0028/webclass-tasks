@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout 2.4</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        
+        .grid-container {
+            display: grid;
+            grid-template-rows: 80px auto 1fr;
+            grid-template-columns: 2fr 1fr;
+            grid-template-areas: 
+                "header header"
+                "main aside2"
+                "main aside1";
+            height: 500px;
+            margin-top: 20px;
+            border-left: 1px solid black;
+        }
+        
+        .grid-item {
+            background-color: #75243f; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            font-size: 1.20rem;
+            color: #000;
+            border-top: 1px solid black;
+            border-right: 1px solid black;
+            border-bottom: 1px solid black;
+        }
+        
+        .header {
+            grid-area: header;
+        }
+        
+        .main {
+            grid-area: main;
+        }
+        
+        .aside1 {
+            grid-area: aside1;
+        }
+        
+        .aside2 {
+            grid-area: aside2;
+        }
+        
+        h2 {
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h2>2.4</h2>
+    <div class="grid-container">
+        <div class="grid-item header">Header</div>
+        <div class="grid-item main">Left Main Content</div>
+        <div class="grid-item aside2">Aside2</div>
+        <div class="grid-item aside1">Aside1</div>
+    </div>
+</body>
+</html>
